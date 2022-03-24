@@ -5,10 +5,10 @@ import Counter from './components/Counter'
 const App = () => (
 	<div>
 		<h1> My counter app </h1>
-		<Counter />
-		<Counter />
-		<Counter />
-		<Counter />
+		<Counter initial={10} />
+		<Counter initial={20} />
+		<Counter initial={30} />
+		<Counter initial={40} />
 	</div>
 )
 

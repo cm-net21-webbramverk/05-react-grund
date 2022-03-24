@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
 
-const Counter = () => {
-	const [count, setCount] = useState(12)
+const Counter = ({ initial }) => {
+	const [count, setCount] = useState(initial)
 
 	// function increase(event) {
 	// 	setCount(count + 1)
