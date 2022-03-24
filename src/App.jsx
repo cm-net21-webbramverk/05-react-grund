@@ -1,45 +1,46 @@
 import { useState } from 'react'
-import logo from './logo.svg'
+// import logo from './logo.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Good morning!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
-  )
-}
+const App = () => {
+	const [count, setCount] = useState(12)
+
+	// function increase(event) {
+	// 	setCount(count + 1)
+	// }
+	const increase = event => setCount(count + 1)
+
+	return (
+		<div>
+			<h1> My counter app </h1>
+			<section>
+				<button onClick={increase}> Increase +1 </button>
+				<p>The value is: {count}.</p>
+			</section>
+		</div>
+	)
+};
+
 
 export default App
+
+
+// function App() {
+	// 	const [count, setCount] = useState(10)
+
+// 	return (
+// 		<div className="App">
+// 			<header>
+// 				<h1> React demo </h1>
+// 			</header>
+// 			<main className="App-header">
+// 				<button onClick={() => setCount(count + 1)}>
+// 				count is: {count}
+// 				</button>
+// 				<button onClick={() => setCount(count - 1)}> Decrease value </button>
+// 			</main>
+// 		</div>
+// 	)
+// }
+
