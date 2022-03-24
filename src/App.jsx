@@ -1,26 +1,16 @@
-import { useState } from 'react'
-// import logo from './logo.svg'
 import './App.css'
+import Counter from './components/Counter'
 
 
-const App = () => {
-	const [count, setCount] = useState(12)
-
-	// function increase(event) {
-	// 	setCount(count + 1)
-	// }
-	const increase = event => setCount(count + 1)
-
-	return (
-		<div>
-			<h1> My counter app </h1>
-			<section>
-				<button onClick={increase}> Increase +1 </button>
-				<p>The value is: {count}.</p>
-			</section>
-		</div>
-	)
-};
+const App = () => (
+	<div>
+		<h1> My counter app </h1>
+		<Counter />
+		<Counter />
+		<Counter />
+		<Counter />
+	</div>
+)
 
 
 export default App
