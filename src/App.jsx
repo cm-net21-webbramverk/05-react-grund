@@ -1,10 +1,12 @@
 import './App.css'
 import Counter from './components/Counter'
+import DarkMode from './components/DarkMode'
 
 
 const App = () => (
 	<div>
 		<h1> My counter app </h1>
+		<DarkMode />
 		<Counter initial={10} />
 		<Counter initial={20} />
 		<Counter initial={30} />
